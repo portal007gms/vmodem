@@ -1,3 +1,6 @@
+This fork fetches the connection name of the host (example: eth0) instead of it being hardcoded.
+Also, getty has been replaced with agetty
+
 # vmodem
 The Virtual Hayes Compatible Modem script for Linux.
 
