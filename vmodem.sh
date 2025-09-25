@@ -232,7 +232,7 @@ while [ "$continue" != "1" ]; do
             echo -en "\x1b[20h" > /dev/$serport
  
             # Run script with getty
-            /sbin/getty -8 -L $serport $baud $TERM -n -l "./$number.sh"
+            agetty -8 -L $serport $baud $TERM -n -l "./$number.sh"
  
             # Reset serial settings
             ttyinit

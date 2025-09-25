@@ -18,7 +18,7 @@
 # This is set in vmodem.sh, but can be overridden here.
 #
 # Default:    #etherp=eth0 (commented out)
-etherp=enp9s0
+etherp=$(ip route get 1.1.1.1 | awk '{print $5; exit}')
  
 # Variable: lcpidle
 # Specifies the idle timeout period in seconds for lcp-echo-interval.
